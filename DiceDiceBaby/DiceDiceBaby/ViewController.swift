@@ -12,9 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageOne: UIImageView!
     @IBOutlet weak var diceImageTwo: UIImageView!
     
-    var leftDiceImage = 1
-    var rightDiceImage = 1
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,15 +19,13 @@ class ViewController: UIViewController {
     
     @IBAction func rollDiceButton(_ sender: UIButton) {
         
-        print(leftDiceImage)
+        // To create image literal in Xcode type - #imageLiteral()
+        // To create color literal in Xcode type - #colorLiteral()
+        var diceArray = [#imageLiteral(resourceName: "Dice1"), #imageLiteral(resourceName: "Dice2"), #imageLiteral(resourceName: "Dice3"), #imageLiteral(resourceName: "Dice4"), #imageLiteral(resourceName: "Dice5"), #imageLiteral(resourceName: "Dice6")]
         
-        diceImageOne.image = [#imageLiteral(resourceName: "Dice1"), #imageLiteral(resourceName: "Dice2"), #imageLiteral(resourceName: "Dice3"), #imageLiteral(resourceName: "Dice4"), #imageLiteral(resourceName: "Dice5"), #imageLiteral(resourceName: "Dice6")][leftDiceImage]
-        diceImageTwo.image = [#imageLiteral(resourceName: "Dice1"), #imageLiteral(resourceName: "Dice2"), #imageLiteral(resourceName: "Dice3"), #imageLiteral(resourceName: "Dice4"), #imageLiteral(resourceName: "Dice5"), #imageLiteral(resourceName: "Dice6")][rightDiceImage]
+        diceImageOne.image = diceArray[Int.random(in: 0...5)]
+        diceImageTwo.image = diceArray[Int.random(in: 0...5)]
         
-        leftDiceImage += 1
-        rightDiceImage += 1
-        
-        print(leftDiceImage)
     }
 }
 
