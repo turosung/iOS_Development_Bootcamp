@@ -96,6 +96,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = naaturosung;
 				TargetAttributes = {
 					A85BCD6B2AA55EAB007BA31E = {
 						CreatedOnToolsVersion = 14.3.1;
