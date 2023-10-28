@@ -3,7 +3,7 @@
 //  BMI_Calculator
 //
 //  Created by Nuhu Sulemana on 21/10/2023.
-//
+//  Copyright © 2023 SwiftingWithTurosung. All rights reserved.
 
 import UIKit
 
