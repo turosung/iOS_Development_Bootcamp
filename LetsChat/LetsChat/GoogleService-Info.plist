@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyDMFCaNk3anA1sgeFlKqvu16eGNWDiPk3Y</string>
+	<string>INSERT_API_KEY_HERE</string>
 	<key>GCM_SENDER_ID</key>
 	<string>404985163269</string>
 	<key>PLIST_VERSION</key>
@@ -15,16 +15,16 @@
 	<key>STORAGE_BUCKET</key>
 	<string>letschat-8e97a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:404985163269:ios:76cd4891559810a5de766c</string>
+	<string>INSERT_APP_ID_HERE</string>
 </dict>
 </plist>
