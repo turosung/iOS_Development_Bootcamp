@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A85E7C542B692F8D0066D545 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A85E7C532B692F8D0066D545 /* GoogleService-Info.plist */; };
+		A85E7C562B7EE3700066D545 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E7C552B7EE3700066D545 /* Constants.swift */; };
+		A85E7C582B7F60030066D545 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E7C572B7F60030066D545 /* Message.swift */; };
+		A85E7C5B2B7F72540066D545 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85E7C592B7F72540066D545 /* MessageCell.swift */; };
+		A85E7C5C2B7F72540066D545 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85E7C5A2B7F72540066D545 /* MessageCell.xib */; };
 		A8EF29A02B453C9300B675AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF299F2B453C9300B675AC /* AppDelegate.swift */; };
 		A8EF29A22B453C9300B675AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF29A12B453C9300B675AC /* SceneDelegate.swift */; };
 		A8EF29A42B453C9300B675AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF29A32B453C9300B675AC /* ViewController.swift */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		8FE9300564A37B0E7981BBC5 /* Pods-LetsChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsChat.release.xcconfig"; path = "Target Support Files/Pods-LetsChat/Pods-LetsChat.release.xcconfig"; sourceTree = "<group>"; };
 		A85E7C532B692F8D0066D545 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A85E7C552B7EE3700066D545 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A85E7C572B7F60030066D545 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A85E7C592B7F72540066D545 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		A85E7C5A2B7F72540066D545 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		A8EF299C2B453C9300B675AC /* LetsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EF299F2B453C9300B675AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8EF29A12B453C9300B675AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 				A8EF29AA2B453C9400B675AC /* LaunchScreen.storyboard */,
 				A8EF29AD2B453C9400B675AC /* Info.plist */,
 				A85E7C532B692F8D0066D545 /* GoogleService-Info.plist */,
+				A85E7C552B7EE3700066D545 /* Constants.swift */,
 			);
 			path = LetsChat;
 			sourceTree = "<group>";
@@ -104,6 +113,7 @@
 		A8EF2A142B4542C500B675AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A85E7C572B7F60030066D545 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				A8EF2A1C2B45485E00B675AC /* Main.storyboard */,
+				A85E7C592B7F72540066D545 /* MessageCell.swift */,
+				A85E7C5A2B7F72540066D545 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8EF29AC2B453C9400B675AC /* LaunchScreen.storyboard in Resources */,
+				A85E7C5C2B7F72540066D545 /* MessageCell.xib in Resources */,
 				A8EF29A92B453C9400B675AC /* Assets.xcassets in Resources */,
 				A85E7C542B692F8D0066D545 /* GoogleService-Info.plist in Resources */,
 				A8EF29B42B453D3C00B675AC /* README.md in Resources */,
@@ -251,12 +264,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8EF29C02B453DB400B675AC /* LoginViewController.swift in Sources */,
+				A85E7C5B2B7F72540066D545 /* MessageCell.swift in Sources */,
 				A8EF29A42B453C9300B675AC /* ViewController.swift in Sources */,
 				A8EF29C12B453DB400B675AC /* RegisterViewController.swift in Sources */,
+				A85E7C582B7F60030066D545 /* Message.swift in Sources */,
 				A8EF29BF2B453DB400B675AC /* WelcomeViewController.swift in Sources */,
 				A8EF29A02B453C9300B675AC /* AppDelegate.swift in Sources */,
 				A8EF29BE2B453DB400B675AC /* ChatViewController.swift in Sources */,
 				A8EF29A22B453C9300B675AC /* SceneDelegate.swift in Sources */,
+				A85E7C562B7EE3700066D545 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
